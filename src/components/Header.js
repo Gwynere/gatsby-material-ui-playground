@@ -10,7 +10,7 @@ export default function Header() {
                 
             </Typography>
             <Typography variant="body2" component="p">
-                Laborum adipisicing laborum ex irure cillum consequat Lorem elit Lorem. Consectetur in deserunt consequat aute non consectetur officia magna dolore nisi eu qui laborum. In veniam mollit anim culpa minim adipisicing excepteur.
+                Laborum adipisicing laborum ex irure cillum consequat Lorem elit Lorem. Magna dolore nisi eu qui laborum. In veniam mollit anim culpa minim adipisicing excepteur.
             </Typography>
         </header>
     )
