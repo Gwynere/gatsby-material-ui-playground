@@ -24,9 +24,33 @@ console.log(Photo)
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Grid container spacing={3}>
-
+    <Grid container spacing={3} style={{
+      width: '80%',
+      margin: '0 auto'
+    }}>
       <Grid container item xs={12} spacing={3}>
+        <Grid container item xs={8} spacing={3} >
+          <Grid item xs={12}>
+            <Typography variant="h6" component="h2" gutterBottom>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore cumque neque dolorem accusantium deserunt.
+                </Typography>
+          </Grid>
+          <Grid item xs={5}>
+            <Typography variant="body1" component="p" gutterBottom>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit consectetur repudiandae magnam labore eius voluptate repellendus quo laudantium? Accusantium pariatur fuga eos facere fugit. Enim mollitia magni quasi ipsa veritatis laborum facere rerum nesciunt incidunt fuga. Odio rerum neque, ad, voluptatibus a doloribus iusto sunt aut quo sit dolores.
+                </Typography>
+          </Grid>
+
+          <Grid item xs={7}>
+            <Typography variant="body1" component="p" gutterBottom>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit consectetur repudiandae magnam labore eius voluptate repellendus quo laudantium? Accusantium pariatur fuga eos facere fugit. Enim mollitia magni quasi ipsa veritatis laborum facere rerum nesciunt incidunt fuga. Odio rerum neque, ad, voluptatibus a doloribus iusto sunt aut quo sit dolores.
+                </Typography>
+            <Button variant="outlined" size="large" style={{
+              marginTop: '1rem'
+            }}>View Resume</Button>
+          </Grid>
+
+        </Grid>
         <Grid item xs={4}>
           <Avatar style={{
             width: '100%',
@@ -35,47 +59,25 @@ const IndexPage = () => (
             objectFit: 'contain'
           }} alt="" src={Photo} />
         </Grid>
-        <Grid item xs={8} >
-          <Grid container spacing={0}>
-            <Paper style={{
-              padding: '2rem'
-            }}>
-              <Grid item xs={12}>
-                <Typography variant="h6" component="h2">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore cumque neque dolorem accusantium deserunt.
-                </Typography>
-                <Typography variant="body1" component="p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit consectetur repudiandae magnam labore eius voluptate repellendus quo laudantium? Accusantium pariatur fuga eos facere fugit. Enim mollitia magni quasi ipsa veritatis laborum facere rerum nesciunt incidunt fuga. Odio rerum neque, ad, voluptatibus a doloribus iusto sunt aut quo sit dolores.
-                </Typography>
-              </Grid>
-              <Grid item xs={12}>
-                <Typography variant="body1" component="p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit consectetur repudiandae magnam labore eius voluptate repellendus quo laudantium? Accusantium pariatur fuga eos facere fugit. Enim mollitia magni quasi ipsa veritatis laborum facere rerum nesciunt incidunt fuga. Odio rerum neque, ad, voluptatibus a doloribus iusto sunt aut quo sit dolores.
-                </Typography>
-                <Button variant="outlined" size="large" style={{
-                  marginTop: '1rem'
-                }}>View Resume</Button>
-              </Grid>
-
-            </Paper>
-          </Grid>
-        </Grid>
       </Grid>
-      <Grid container item xs={12} spacing={3}>
-        <Grid item xs={12} >
+      <Grid container item xs={12} spacing={6}>
+        <Grid item xs={6} >
           <Typography variant="h6" component="h2">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </Typography>
+          </Typography>
           <Typography variant="body1" component="p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit consectetur repudiandae magnam labore eius voluptate repellendus quo laudantium?
-              </Typography>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, vero facilis! Laboriosam cum ullam adipisci a iste. Earum, consequatur fugiat.
+          </Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={6}>
           <Skills />
         </Grid>
       </Grid>
+      <Grid item xs={12}>
+        <TextField />
+      </Grid>
     </Grid>
-
   </Layout>
 )
 
