@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     flex: '1',
     flexDirection: 'column',
     justifyContent: 'center',
-    padding: '4rem',
+    padding: '2rem',
     textAlign: 'right',
     background: 'rgba(0,0,0, .05)',
     position: 'sticky',
@@ -37,17 +37,12 @@ export default function Navigation() {
     <div className={classes.root}>
       <Header />
       <Divider />
-      <List style={{
-            padding: '2rem'
-        }}>
+      <List>
         <ListItem className={classes.right} button component={Link} to={`/`}>
           <ListItemText primary="Home" />
         </ListItem>
         <ListItem className={classes.right} button component={Link} to={`/works`}>
           <ListItemText primary="Works" />
-        </ListItem>
-        <ListItem className={classes.right} button component={Link} to={`/contact`}>
-          <ListItemText primary="Contact" />
         </ListItem>
       </List>
       <Footer />

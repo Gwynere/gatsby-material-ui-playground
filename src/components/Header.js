@@ -6,7 +6,7 @@ import {
 export default function Header() {
     return (
         <header style={{
-            padding: '2rem'
+            padding: '2rem 0'
         }}>
             <Typography variant="h5" component="h2">
                 Laborum adipisicing laborum ex irure
