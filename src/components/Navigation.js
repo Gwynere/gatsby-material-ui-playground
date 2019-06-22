@@ -5,7 +5,8 @@ import {
   ListItemText,
   Divider,
   makeStyles,
-  Typography
+  Typography,
+  Container
 } from '@material-ui/core'
 import { Link } from "gatsby"
 
@@ -14,13 +15,16 @@ import Footer from './Footer'
 
 const useStyles = makeStyles(theme => ({
   root: {
+    minHeight: '100vh',
     display: 'flex',
-    height: '100vh',
+    flex: '1',
     flexDirection: 'column',
     justifyContent: 'center',
-    border: '1px solid red',
     padding: '4rem',
-    textAlign: 'right'
+    textAlign: 'right',
+    background: 'rgba(0,0,0, .05)',
+    position: 'sticky',
+    top: '0'
   },
   right: {
     textAlign: 'right'
@@ -33,14 +37,19 @@ export default function Navigation() {
     <div className={classes.root}>
       <Header />
       <Divider />
-      <List>
-        {['Skills', 'Works', 'Contact'].map((text, index) => (
-          <ListItem className={classes.right} button key={text} component={Link} to={`/${text.toLowerCase()}/`}>
-            <ListItemText primary={text}/>
-          </ListItem>
-        ))}
+      <List style={{
+            padding: '2rem'
+        }}>
+        <ListItem className={classes.right} button component={Link} to={`/`}>
+          <ListItemText primary="Home" />
+        </ListItem>
+        <ListItem className={classes.right} button component={Link} to={`/works`}>
+          <ListItemText primary="Works" />
+        </ListItem>
+        <ListItem className={classes.right} button component={Link} to={`/contact`}>
+          <ListItemText primary="Contact" />
+        </ListItem>
       </List>
-      <Divider />
       <Footer />
     </div>
   )

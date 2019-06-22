@@ -5,9 +5,11 @@ import {
 
 export default function Header() {
     return (
-        <header>
-            <Typography>
-                
+        <header style={{
+            padding: '2rem'
+        }}>
+            <Typography variant="h5" component="h2">
+                Laborum adipisicing laborum ex irure
             </Typography>
             <Typography variant="body2" component="p">
                 Laborum adipisicing laborum ex irure cillum consequat Lorem elit Lorem. Magna dolore nisi eu qui laborum. In veniam mollit anim culpa minim adipisicing excepteur.

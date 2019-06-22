@@ -13,15 +13,8 @@ import Navigation from "./Navigation"
 
 import {
   Grid,
-  CssBaseline,
-  makeStyles
+  CssBaseline
 } from '@material-ui/core'
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    display: 'flex'
-  }
-}))
 
 
 const Layout = ({ children }) => (
@@ -43,7 +36,9 @@ const Layout = ({ children }) => (
           <Navigation siteTitle={data.site.siteMetadata.title} />
         </Grid>
         <Grid item xs={12} sm={12} md={8}>
-          <main>
+          <main style={{
+            padding: '4rem'
+          }}>
             {children}
           </main>
         </Grid>
