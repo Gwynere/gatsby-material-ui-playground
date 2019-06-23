@@ -37,7 +37,9 @@ const Layout = ({ children }) => (
         </Grid>
         <Grid item xs={12} sm={12} md={8}>
           <main style={{
-            padding: '2rem'
+            width: '80%',
+            margin: '0 auto',
+            padding: '4rem 0'
           }}>
             {children}
           </main>

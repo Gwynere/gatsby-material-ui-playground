@@ -41,6 +41,9 @@ export default function Navigation() {
         <ListItem className={classes.right} button component={Link} to={`/`}>
           <ListItemText primary="Home" />
         </ListItem>
+        <ListItem className={classes.right} button component={Link} to={`/resume`}>
+          <ListItemText primary="Resume" />
+        </ListItem>
         <ListItem className={classes.right} button component={Link} to={`/works`}>
           <ListItemText primary="Works" />
         </ListItem>
