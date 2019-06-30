@@ -31,11 +31,11 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-export default function Navigation() {
+export default function Navigation(props) {
   const classes = useStyles()
   return (
     <div className={classes.root}>
-      <Header />
+      <Header siteTitle={props.siteTitle} />
       <Divider />
       <List>
         <ListItem className={classes.right} button component={Link} to={`/`}>

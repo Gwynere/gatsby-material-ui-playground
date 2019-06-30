@@ -61,7 +61,7 @@ export default function ControlledExpansionPanels() {
           id="panel1bh-header"
         >
           <Typography className={classes.heading}>FrontEnd Development</Typography>
-          <Typography className={classes.secondaryHeading}>I am an expansion panel</Typography>
+          <Typography className={classes.secondaryHeading}>My core development skills</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -78,31 +78,13 @@ export default function ControlledExpansionPanels() {
         >
           <Typography className={classes.heading}>Tools</Typography>
           <Typography className={classes.secondaryHeading}>
-            You are currently not an owner
+            Everything that helps me with my workflow
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
             Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus, varius pulvinar
             diam eros in elit. Pellentesque convallis laoreet laoreet.
-          </Typography>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
-      <ExpansionPanel>
-        <ExpansionPanelSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel3bh-content"
-          id="panel3bh-header"
-        >
-          <Typography className={classes.heading}>Soft Skills</Typography>
-          <Typography className={classes.secondaryHeading}>
-            Filtering has been entirely disabled for whole web server
-          </Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
-            vitae egestas augue. Duis vel est augue.
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -114,7 +96,7 @@ export default function ControlledExpansionPanels() {
         >
           <Typography className={classes.heading}>In Development</Typography>
           <Typography className={classes.secondaryHeading}>
-            Filtering has been entirely disabled for whole web server
+            Current skills that i'm working on
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
