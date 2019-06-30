@@ -4,7 +4,7 @@ import Skills from "../components/Skills"
 
 const useStyles = makeStyles(() => ({
   root: {
-    marginTop: '2rem'
+    marginTop: '0'
   }
 }))
 
@@ -12,7 +12,7 @@ const SkillSection = () => {
   const classes = useStyles()
   return (
     <Grid container item xs={12} className={classes.root}>
-      <Grid item xs={12}>
+      <Grid item xs={12} lg={5}>
         <Typography variant="h6" component="h2">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         </Typography>
@@ -24,7 +24,7 @@ const SkillSection = () => {
           consequatur fugiat.
         </Typography>
       </Grid>
-      <Grid item xs={12} className={classes.root}>
+      <Grid item xs={12} lg={7} className={classes.root}>
         <Skills />
       </Grid>
     </Grid>

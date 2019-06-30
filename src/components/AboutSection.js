@@ -4,21 +4,29 @@ import {
     Typography,
     Avatar,
     Button,
-    Hidden
+    Hidden,
+    makeStyles
 } from '@material-ui/core'
 import Photo from "../images/photo.jpg"
 
+const useStyles = makeStyles(() => ({
+  root: {
+    marginTop: '2rem'
+  }
+}))
+
 const AboutSection = () => {
+  const classes = useStyles()
   return (
-    <Grid container item xs={12} spacing={3}>
-      <Grid container item xs={12} spacing={3}>
-        <Grid item xs={12}>
+    <Grid container item xs={12} className={classes.root}>
+      <Grid container item xs={12} lg={7}>
+        <Grid item xs={12} sm={12}>
           <Typography variant="h6" component="h2" gutterBottom>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
             cumque neque dolorem accusantium deserunt.
           </Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} sm={6}>
           <Typography variant="body1" component="p" gutterBottom>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
             dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
@@ -30,8 +38,7 @@ const AboutSection = () => {
             sit dolores.
           </Typography>
         </Grid>
-
-        <Grid item xs={12}>
+        <Grid item xs={12} sm={6}>
           <Typography variant="body1" component="p" gutterBottom>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium?
             Accusantium pariatur fuga eos facere fugit. Enim mollitia magni
@@ -50,8 +57,8 @@ const AboutSection = () => {
           </Button>
         </Grid>
       </Grid>
-      <Grid item  >
-        <Hidden smDown>
+      <Grid item md={5} >
+        <Hidden mdDown>
         <Avatar
           style={{
             width: "100%",
