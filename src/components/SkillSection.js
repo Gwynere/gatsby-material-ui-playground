@@ -11,8 +11,11 @@ const useStyles = makeStyles(() => ({
 const SkillSection = () => {
   const classes = useStyles()
   return (
-    <Grid container item xs={12} className={classes.root}>
-      <Grid item xs={12} lg={5}>
+    <Grid container item xs={12} spacing={3} className={classes.root}>
+      <Grid item xs={12} sm={6} md={5} className={classes.root}>
+        <Skills />
+      </Grid>
+      <Grid item xs={12} sm={6} md={7}>
         <Typography variant="h6" component="h2">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         </Typography>
@@ -23,9 +26,6 @@ const SkillSection = () => {
           elit. Esse, vero facilis! Laboriosam cum ullam adipisci a iste. Earum,
           consequatur fugiat.
         </Typography>
-      </Grid>
-      <Grid item xs={12} lg={7} className={classes.root}>
-        <Skills />
       </Grid>
     </Grid>
   )

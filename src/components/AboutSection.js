@@ -19,7 +19,7 @@ const AboutSection = () => {
   const classes = useStyles()
   return (
     <Grid container item xs={12} className={classes.root}>
-      <Grid container item xs={12} lg={7}>
+      <Grid container item xs={12} spacing={3} lg={7}>
         <Grid item xs={12} sm={12}>
           <Typography variant="h6" component="h2" gutterBottom>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore

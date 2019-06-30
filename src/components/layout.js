@@ -29,7 +29,6 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-
       <Grid container>
         <CssBaseline />
         <Grid item xs={12} sm={12} md={4}>

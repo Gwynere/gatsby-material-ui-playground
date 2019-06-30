@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Works from "../components/Works"
+import WorkSection from "../components/Works"
 import AboutSection from '../components/AboutSection'
 import SkillSection from '../components/SkillSection'
 
@@ -14,7 +14,7 @@ const IndexPage = () => (
       <AboutSection />
       <SkillSection />
       <Grid item xs={12}>
-        <Works />
+        <WorkSection />
       </Grid>
     </Grid>
   </Layout>

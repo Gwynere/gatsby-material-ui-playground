@@ -1,56 +1,44 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import React from "react"
+import { makeStyles } from "@material-ui/core/styles"
+import ExpansionPanel from "@material-ui/core/ExpansionPanel"
+import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary"
+import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails"
+import Typography from "@material-ui/core/Typography"
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import {
   Grid,
   List,
   ListItem,
   ListItemIcon,
-  ListItemText
-} from '@material-ui/core'
+  ListItemText,
+} from "@material-ui/core"
 
-import {
-  DiFirefox,
-  DiCss3,
-  DiHtml5,
-  DiReact,
-  DiJavascript,
-  DiGithub,
-  DiVisualstudio,
-  DiPhotoshop,
-  DiNodejs,
-  DiNpm,
-  DiSass,
-} from "react-icons/di";
+import { CheckCircleTwoTone } from "@material-ui/icons"
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: '100%',
+    width: "100%",
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
-    flexBasis: '33.33%',
+    flexBasis: "33.33%",
     flexShrink: 0,
-    fontWeight: 'bold'
+    fontWeight: "bold",
   },
   secondaryHeading: {
     fontSize: theme.typography.pxToRem(15),
     color: theme.palette.text.secondary,
-    fontWeight: 'bold'
+    fontWeight: "bold",
   },
-}));
+}))
 
 export default function ControlledExpansionPanels() {
-  const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
+  const classes = useStyles()
+  const [expanded, setExpanded] = React.useState(false)
 
   const handleChange = panel => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
+    setExpanded(isExpanded ? panel : false)
+  }
 
   return (
     <div className={classes.root}>
@@ -60,14 +48,43 @@ export default function ControlledExpansionPanels() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}>FrontEnd Development</Typography>
-          <Typography className={classes.secondaryHeading}>My core development skills</Typography>
+          <Typography className={classes.heading}>
+            FrontEnd Development
+          </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-            maximus est, id dignissim quam.
-          </Typography>
+          <List dense>
+            <ListItem alignItems="flex-start">
+              <ListItemIcon>
+                <CheckCircleTwoTone />
+              </ListItemIcon>
+              <ListItemText>HTML5</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemIcon>
+                <CheckCircleTwoTone />
+              </ListItemIcon>
+              <ListItemText>CSS3</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemIcon>
+                <CheckCircleTwoTone />
+              </ListItemIcon>
+              <ListItemText>Javascript</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemIcon>
+                <CheckCircleTwoTone />
+              </ListItemIcon>
+              <ListItemText>Responsive Web Design</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemIcon>
+                <CheckCircleTwoTone />
+              </ListItemIcon>
+              <ListItemText>React</ListItemText>
+            </ListItem>
+          </List>
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel>
@@ -76,36 +93,77 @@ export default function ControlledExpansionPanels() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography className={classes.heading}>Tools</Typography>
-          <Typography className={classes.secondaryHeading}>
-            Everything that helps me with my workflow
-          </Typography>
+          <Typography className={classes.heading}>Tools & Version Control</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus, varius pulvinar
-            diam eros in elit. Pellentesque convallis laoreet laoreet.
-          </Typography>
+          <List dense>
+            <ListItem alignItems="flex-start">
+              <ListItemIcon>
+                <CheckCircleTwoTone />
+              </ListItemIcon>
+              <ListItemText>Visual Studio Code</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemIcon>
+                <CheckCircleTwoTone />
+              </ListItemIcon>
+              <ListItemText>Git & GitHub</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemIcon>
+                <CheckCircleTwoTone />
+              </ListItemIcon>
+              <ListItemText>Photoshop</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemIcon>
+                <CheckCircleTwoTone />
+              </ListItemIcon>
+              <ListItemText>Adobe XD</ListItemText>
+            </ListItem>
+          </List>
         </ExpansionPanelDetails>
       </ExpansionPanel>
-      <ExpansionPanel expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+      <ExpansionPanel
+        expanded={expanded === "panel4"}
+        onChange={handleChange("panel4")}
+      >
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography className={classes.heading}>In Development</Typography>
-          <Typography className={classes.secondaryHeading}>
-            Current skills that i'm working on
-          </Typography>
+          <Typography className={classes.heading}>Actually Learning</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
-            vitae egestas augue. Duis vel est augue.
-          </Typography>
+        <List dense>
+            <ListItem alignItems="flex-start">
+              <ListItemIcon>
+                <CheckCircleTwoTone />
+              </ListItemIcon>
+              <ListItemText>React Redux</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemIcon>
+                <CheckCircleTwoTone />
+              </ListItemIcon>
+              <ListItemText>Testing with Jest</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemIcon>
+                <CheckCircleTwoTone />
+              </ListItemIcon>
+              <ListItemText>GatsbyJs</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemIcon>
+                <CheckCircleTwoTone />
+              </ListItemIcon>
+              <ListItemText>Material UI</ListItemText>
+            </ListItem>
+          </List>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>
-  );
+  )
 }
