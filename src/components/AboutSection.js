@@ -17,9 +17,10 @@ const useStyles = makeStyles(() => ({
 
 const AboutSection = () => {
   const classes = useStyles()
+
   return (
-    <Grid container item xs={12} className={classes.root}>
-      <Grid container item xs={12} spacing={3} lg={7}>
+    <Grid container item xs={12} className={classes.root} spacing={3}>
+      <Grid container item xs={12} lg={7} spacing={3}>
         <Grid item xs={12} sm={12}>
           <Typography variant="h6" component="h2" gutterBottom>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
@@ -49,8 +50,9 @@ const AboutSection = () => {
           <Button
             variant="outlined"
             size="large"
+            color="primary"
             style={{
-              marginTop: "1rem",
+              marginTop: "1rem"
             }}
           >
             View Resume
@@ -64,9 +66,9 @@ const AboutSection = () => {
             width: "100%",
             minHeight: "100%",
             borderRadius: "0",
-            objectFit: "contain",
+            objectFit: "cover",
           }}
-          alt=""
+          alt="Jan Pardak's face"
           src={Photo}
         />
         </Hidden>

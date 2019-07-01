@@ -9,7 +9,7 @@ export default function Header(props) {
             padding: '2rem 0'
         }}>
             <Typography variant="h5" component="h2">
-                {props.siteTitle}
+                Lorem ipsum dolor sit amet consectetur.
             </Typography>
             <Typography variant="body2" component="p">
                 Laborum adipisicing laborum ex irure cillum consequat Lorem elit Lorem. Magna dolore nisi eu qui laborum. In veniam mollit anim culpa minim adipisicing excepteur.
