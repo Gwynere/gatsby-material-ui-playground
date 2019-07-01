@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import WorkSection from "../components/Works"
+import WorkSection from "../components/WorkSection"
 import AboutSection from '../components/AboutSection'
 import SkillSection from '../components/SkillSection'
 
