@@ -4,9 +4,7 @@ import {
   ListItem,
   ListItemText,
   Divider,
-  makeStyles,
-  Typography,
-  Container
+  makeStyles
 } from '@material-ui/core'
 import { Link } from "gatsby"
 
