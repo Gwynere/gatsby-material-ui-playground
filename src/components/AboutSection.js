@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'gatsby'
 import {
     Grid,
     Typography,
@@ -51,6 +52,9 @@ const AboutSection = () => {
             variant="outlined"
             size="large"
             color="primary"
+            component="a"
+            href="#"
+            target="_blank"
             style={{
               marginTop: "1rem"
             }}

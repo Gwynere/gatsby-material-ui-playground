@@ -5,7 +5,7 @@ export default function Footer() {
         <footer style={{
             padding: '2rem 0'
         }}>
-            &copy; Portfolio built by Jan, with GatsbyJs & Material-UI
+            &copy; Portfolio built by Jan Pardak, with GatsbyJs & Material-UI
         </footer>
     )
 }

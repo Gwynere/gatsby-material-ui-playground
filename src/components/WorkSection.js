@@ -164,16 +164,155 @@ export default function WorkSection() {
               component="a"
               href="https://github.com/Gwynere/nexter"
               target="_blank"
-            >
+            >4
               Source Code
             </Button>
           </CardActions>
         </Card>
       </Grid>
-      <Grid item>
-        <Button variant="outlined" color="primary" size="large" component={Link} to="/works">
-          See more works
-        </Button>
+
+      <Grid item sm={12} md={6} lg={4}>
+        <Card className={classes.card}>
+          <CardMedia
+            component="img"
+            alt="Contemplative Reptile"
+            height="300"
+            image={Work}
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Nexter
+            </Typography>
+            <Typography component="div" gutterBottom>
+              <Chip label="html5" className={classes.chip} />
+              <Chip label="Css3" className={classes.chip} />
+              <Chip label="Css Grid" className={classes.chip} />
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button
+              size="medium"
+              color="primary"
+              variant="outlined"
+              component="a"
+              href="https://gwynere.github.io/nexter/"
+              target="_blank"
+            >
+              Demo
+            </Button>
+            <Button
+              size="medium"
+              variant="outlined"
+              color="primary"
+              component="a"
+              href="https://github.com/Gwynere/nexter"
+              target="_blank"
+            >4
+              Source Code
+            </Button>
+          </CardActions>
+        </Card>
+      </Grid>
+
+      <Grid item sm={12} md={6} lg={4}>
+        <Card className={classes.card}>
+          <CardMedia
+            component="img"
+            alt="Contemplative Reptile"
+            height="300"
+            image={Work}
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Nexter
+            </Typography>
+            <Typography component="div" gutterBottom>
+              <Chip label="html5" className={classes.chip} />
+              <Chip label="Css3" className={classes.chip} />
+              <Chip label="Css Grid" className={classes.chip} />
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button
+              size="medium"
+              color="primary"
+              variant="outlined"
+              component="a"
+              href="https://gwynere.github.io/nexter/"
+              target="_blank"
+            >
+              Demo
+            </Button>
+            <Button
+              size="medium"
+              variant="outlined"
+              color="primary"
+              component="a"
+              href="https://github.com/Gwynere/nexter"
+              target="_blank"
+            >4
+              Source Code
+            </Button>
+          </CardActions>
+        </Card>
+      </Grid>
+
+      <Grid item sm={12} md={6} lg={4}>
+        <Card className={classes.card}>
+          <CardMedia
+            component="img"
+            alt="Contemplative Reptile"
+            height="300"
+            image={Work}
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Nexter
+            </Typography>
+            <Typography component="div" gutterBottom>
+              <Chip label="html5" className={classes.chip} />
+              <Chip label="Css3" className={classes.chip} />
+              <Chip label="Css Grid" className={classes.chip} />
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button
+              size="medium"
+              color="primary"
+              variant="outlined"
+              component="a"
+              href="https://gwynere.github.io/nexter/"
+              target="_blank"
+            >
+              Demo
+            </Button>
+            <Button
+              size="medium"
+              variant="outlined"
+              color="primary"
+              component="a"
+              href="https://github.com/Gwynere/nexter"
+              target="_blank"
+            >4
+              Source Code
+            </Button>
+          </CardActions>
+        </Card>
       </Grid>
     </Grid>
   )

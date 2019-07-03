@@ -9,8 +9,8 @@ import { Grid } from "@material-ui/core"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <Grid container spacing={3}>
+    <SEO title="Homepage" />
+    <Grid container spacing={10}>
       <AboutSection />
       <SkillSection />
       <Grid item xs={12}>
